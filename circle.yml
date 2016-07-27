@@ -13,7 +13,3 @@ test:
 deployment:
   deploy:
     branch: master
-    commands:
-      - make build
-      - make deploy
-
