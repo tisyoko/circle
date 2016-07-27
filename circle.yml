@@ -3,13 +3,13 @@ machine:
     version: 5.6.14
 
 test:
-  pre: 
+  pre:
     - echo "-----start test-----"
-  override:    
+  override:
     - php test1.php
-  post: 
+  post:
     - echo "-----end test-----"
 
 deployment:
-  deploy:
+  staging:
     branch: master
