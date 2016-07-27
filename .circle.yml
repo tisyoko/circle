@@ -3,15 +3,14 @@ machine:
     version: 5.6
 
 test:
-  pre: 
+  pre:
     - echo "-----start test-----"
-  override:    
+  override:
     - echo "-----exec test-----"
     - php test1.php
-  post: 
+  post:
     - echo "-----end test-----"
 
 deployment:
   deploy:
     branch: master
-
