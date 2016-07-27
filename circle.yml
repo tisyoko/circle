@@ -5,3 +5,4 @@ machine:
 test:
   override:
     - echo "-----exec test-----"
+    - php test1.php
