@@ -6,7 +6,7 @@ test:
   pre: 
     - echo "-----start test-----"
   override:    
-    - go test -cover  
+    - echo "-----exec test-----"
     - php test1.php
   post: 
     - echo "-----end test-----"
@@ -14,7 +14,4 @@ test:
 deployment:
   deploy:
     branch: master
-    commands:
-      - make build
-      - make deploy
 
