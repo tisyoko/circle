@@ -6,7 +6,6 @@ test:
   pre: 
     - echo "-----start test-----"
   override:    
-    - go test -cover  
     - php test1.php
   post: 
     - echo "-----end test-----"
